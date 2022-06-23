@@ -1,0 +1,44 @@
+@-webkit-keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=utils.css.map */

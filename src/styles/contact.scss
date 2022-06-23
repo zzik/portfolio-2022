@@ -1,0 +1,82 @@
+@import "./utils.scss";
+
+.contact-wrapper {
+  @include flex-parent(space-around, center, row);
+  min-height: 100vh;
+  flex-wrap: wrap;
+  max-width: 720px;
+  column-gap: 20px;
+  .contact-title {
+      font-size: xx-large;
+      border-bottom: 1px solid black;
+      position: absolute;
+      padding: 12px;
+      margin-left: 12px;
+      top: 0;
+      left: 0;
+  }
+}
+
+.contact-item {
+  @include flex-parent(space-evenly, center, column);
+  padding: 4px;
+  max-width: 200px;
+  min-width: 120px;
+  width: auto;
+  text-align: center;
+  color: $color-primary;
+  svg {
+    color: $color-primary;
+  }
+  margin: 12px;
+}
+
+.form-wrapper {
+  @include flex-parent(center, center, column);
+  width: 100%;
+  max-width: 500px;
+  padding: 24px;
+  border: 1px solid black;
+  .form-details {
+    @include flex-parent(space-around, space-between, row);
+    width: 100%;
+    flex-wrap: wrap;
+
+    .form-mail {
+      @include flex-parent(center, start, column);
+      input[type="email"] {
+        border: 0;
+        border-bottom: 1px solid black;
+        padding: 6px;
+        margin: 12px;
+      }
+      margin: 12px;
+    }
+    .form-subject {
+      @include flex-parent(center, start, column);
+      input[type="text"] {
+        border: 0;
+        border-bottom: 1px solid black;
+        padding: 6px;
+        margin: 12px;
+      }
+    }
+  }
+  .form-content {
+    @include flex-parent(start, center, column);
+    width: 100%;
+
+    textarea {
+      resize: none;
+      height: 120px;
+      width: 100%;
+      padding: 12px;
+    }
+    margin: 15px;
+  }
+  .form-submit {
+    width: 40%;
+    height: 32px;
+    margin: 15px;
+  }
+}

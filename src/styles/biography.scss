@@ -1,0 +1,64 @@
+@import "./utils.scss";
+
+strong {
+  font-weight: 400;
+}
+
+.biography-wrapper {
+  @include grid-parent(1, 1 1 1 1);
+  height: auto;
+  min-height: 100vh;
+  max-height: 1080px;
+  color: $color-primary;
+}
+
+
+.biography-content {
+  .biography-title {
+    font-size: xx-large;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding: 12px;
+    margin-left: 12px;
+    top: 0;
+    left: 0;
+  }
+  @include flex-parent(space-around, center, column);
+  p {
+    padding: 24px;
+  }
+}
+
+.biography-left {
+  position: relative;
+  width: 100%;
+  border-left: 2px solid $color-primary;
+}
+
+.biography-right {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  border-right: 2px solid $color-primary;
+}
+
+#biography-one {
+  animation-delay: 1s;
+  animation: fromLeft 2s ease-in-out;
+  -webkit-animation: fromLeft 2s ease-in-out;
+}
+#biography-two {
+  animation-delay: 2s;
+  animation: fromRight 3s ease-in-out;
+  -webkit-animation: fromRight 3s ease-in-out;
+}
+#biography-three {
+  animation-delay: 3s;
+  animation: fromLeft 4s ease-in-out;
+  -webkit-animation: fromLeft 4s ease-in-out;
+}
+#biography-four {
+  animation-delay: 4s;
+  animation: fromRight 5s ease-in-out;
+  -webkit-animation: fromRight 5s ease-in-out;
+}

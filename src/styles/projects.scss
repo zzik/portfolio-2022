@@ -1,0 +1,28 @@
+@import './utils.scss';
+
+.projects-wrapper {
+  height: 100vh;
+  @include flex-parent(space-around, center, column);
+  flex-wrap: wrap;
+  max-width: 1000px;
+  column-gap: 20px;
+
+  .projects-title {
+    font-size: xx-large;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding: 12px;
+    margin-left: 12px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.projects-item {
+  border-bottom: 1px solid black;
+  padding: 40px;
+  max-width: 500px;
+  width: 60%;
+  color: black;
+}
+

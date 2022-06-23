@@ -1,0 +1,76 @@
+@import "./utils.scss";
+
+
+@media (max-width: 660px) {
+  .navigation-wrapper {
+    color: red;
+  }
+
+  .navigation-mobile {
+    @include flex-parent(end, center, row);
+    height: auto;
+    width: auto;
+    display: block;
+    background-color: $color-primary;
+
+    .navigation-modal {
+      @include flex-parent(center, center, column);
+      position: absolute;
+      bottom: -100%;
+      min-height: 30vh;
+      height: auto;
+      width: 100%;
+      background-color: $color-primary;
+      z-index: 2;
+      a {
+        color: $color-secondary;
+        border-bottom: 1px solid $color-secondary;
+        width: 100%;
+        padding: 24px;
+      }
+      .collapse {
+        @include flex-parent(center, center, column);
+        width: 100%;
+        height: 100%;
+      }
+      transition: 1s ease;
+      -webkit-transition: 1s ease;
+      -moz-transition: 1s ease;
+      -ms-transition: 1s ease;
+      -o-transition: 1s ease;
+    }
+
+    #burger {
+      z-index: 1;
+      color: $color-secondary;
+      font-weight: 200;
+      padding: 16px;
+      font-size: 20px;
+      display: block;
+      position: fixed;
+      bottom:-100%;
+      width: 100%;
+      background-color: $color-primary;
+      border-bottom-left-radius: 15px;
+    }
+
+  }
+
+
+
+  .navigation-desktop {
+    display: none;
+  }
+}
+
+
+
+
+@media (min-width: 660px) {
+  .navigation-mobile {
+    display: none;
+  }
+  .navigation-desktop {
+    display: block;
+  }
+}

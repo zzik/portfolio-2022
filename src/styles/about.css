@@ -1,0 +1,124 @@
+@-webkit-keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.about-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 7fr;
+      grid-template-rows: 1fr 7fr;
+  height: auto;
+  min-height: 100vh;
+  max-height: 1080px;
+}
+
+.about-title {
+  padding: 10px;
+}
+
+.about-title h1 {
+  font-size: 64px;
+}
+
+.about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+}
+
+.about-biography,
+.about-skills {
+  border-left: 1px solid black;
+  padding: 20px;
+  width: 100%;
+}
+
+.about-biography .about-biography-title h2,
+.about-biography .about-skills-title h2,
+.about-skills .about-biography-title h2,
+.about-skills .about-skills-title h2 {
+  font-size: 36px;
+}
+
+.about-biography .about-biography-content,
+.about-biography .about-skills-content,
+.about-skills .about-biography-content,
+.about-skills .about-skills-content {
+  padding: 10px;
+}
+
+.about-biography .about-biography-content li,
+.about-biography .about-skills-content li,
+.about-skills .about-biography-content li,
+.about-skills .about-skills-content li {
+  list-style-type: none;
+}
+
+.about-skills-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=about.css.map */

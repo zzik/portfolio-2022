@@ -1,0 +1,218 @@
+@-webkit-keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 720px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.contact-wrapper .contact-title {
+  font-size: xx-large;
+  border-bottom: 1px solid black;
+  position: absolute;
+  padding: 12px;
+  margin-left: 12px;
+  top: 0;
+  left: 0;
+}
+
+.contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4px;
+  max-width: 200px;
+  min-width: 120px;
+  width: auto;
+  text-align: center;
+  color: #08171e;
+  margin: 12px;
+}
+
+.contact-item svg {
+  color: #08171e;
+}
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 24px;
+  border: 1px solid black;
+}
+
+.form-wrapper .form-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-wrapper .form-details .form-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 12px;
+}
+
+.form-wrapper .form-details .form-mail input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid black;
+  padding: 6px;
+  margin: 12px;
+}
+
+.form-wrapper .form-details .form-subject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-wrapper .form-details .form-subject input[type="text"] {
+  border: 0;
+  border-bottom: 1px solid black;
+  padding: 6px;
+  margin: 12px;
+}
+
+.form-wrapper .form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 15px;
+}
+
+.form-wrapper .form-content textarea {
+  resize: none;
+  height: 120px;
+  width: 100%;
+  padding: 12px;
+}
+
+.form-wrapper .form-submit {
+  width: 40%;
+  height: 32px;
+  margin: 15px;
+}
+/*# sourceMappingURL=contact.css.map */

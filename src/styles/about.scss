@@ -1,0 +1,45 @@
+@import "./utils.scss";
+
+
+.about-wrapper {
+  @include grid-parent(1fr, 1fr 7fr);
+  height: auto;
+  min-height: 100vh;
+  max-height: 1080px;
+}
+
+.about-title {
+  padding: 10px;
+  h1 {
+    font-size: 64px;
+  }
+}
+
+.about-content {
+  @include flex-parent(space-around, start, column);
+  padding: 40px;
+}
+
+.about-biography,
+.about-skills {
+  border-left: 1px solid black;
+  padding: 20px;
+  width: 100%;
+
+  .about-biography-title h2,
+  .about-skills-title h2 {
+    font-size: 36px;
+  }
+
+  .about-biography-content,
+  .about-skills-content {
+    padding: 10px;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+.about-skills-content {
+  @include flex-parent(space-between, start, row);
+}

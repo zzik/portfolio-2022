@@ -1,0 +1,131 @@
+@-webkit-keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+strong {
+  font-weight: 400;
+}
+
+.biography-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 1 1 1 1;
+      grid-template-rows: 1 1 1 1;
+  height: auto;
+  min-height: 100vh;
+  max-height: 1080px;
+  color: #08171e;
+}
+
+.biography-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.biography-content .biography-title {
+  font-size: xx-large;
+  border-bottom: 1px solid black;
+  position: relative;
+  padding: 12px;
+  margin-left: 12px;
+  top: 0;
+  left: 0;
+}
+
+.biography-content p {
+  padding: 24px;
+}
+
+.biography-left {
+  position: relative;
+  width: 100%;
+  border-left: 2px solid #08171e;
+}
+
+.biography-right {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  border-right: 2px solid #08171e;
+}
+
+#biography-one {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  animation: fromLeft 2s ease-in-out;
+  -webkit-animation: fromLeft 2s ease-in-out;
+}
+
+#biography-two {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  animation: fromRight 3s ease-in-out;
+  -webkit-animation: fromRight 3s ease-in-out;
+}
+
+#biography-three {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  animation: fromLeft 4s ease-in-out;
+  -webkit-animation: fromLeft 4s ease-in-out;
+}
+
+#biography-four {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  animation: fromRight 5s ease-in-out;
+  -webkit-animation: fromRight 5s ease-in-out;
+}
+/*# sourceMappingURL=biography.css.map */

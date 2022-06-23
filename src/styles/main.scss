@@ -1,0 +1,28 @@
+@import './utils.scss';
+// @import './navigation.css';
+@import './navigation-copy.css';
+@import './home.scss';
+@import './projects.css';
+@import './contact.css';
+@import './biography.css';
+@import './skills.css';
+@import './welcome.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-weight: 100;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+.app-wrapper {
+  @include flex-parent(center,space-evenly,column);
+  max-width: 1024px;
+}
+
+.App {
+  @include flex-parent(center, center, column)
+}

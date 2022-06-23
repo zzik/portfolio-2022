@@ -1,0 +1,50 @@
+$color-black: #08171e;
+$color-first: #0b1925;
+$color-second: #093b5e;
+$color-third: #195d87;
+$color-fourth: #619bc5;
+$color-fifth: #b0cedb;
+$color-white: #e3eff5;
+$color-primary: $color-black;
+$color-secondary: $color-white;
+
+
+@mixin grid-parent($col, $row) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-template-rows: $row;
+}
+@mixin grid-child($gcs, $gce, $grs, $gre) {
+  grid-column-start: $gcs;
+  grid-column-end: $gce;
+  grid-row-start: $grs;
+  grid-row-end: $gre;
+}
+
+@mixin flex-parent($jc: center, $ai: center, $fd: column) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+}
+
+@keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}

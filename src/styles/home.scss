@@ -1,0 +1,55 @@
+@import "./utils.scss";
+
+.home-wrapper {
+  height: auto;
+  min-height: 100vh;
+  max-height: 1080px;
+  padding: 20px;
+  @include grid-parent(1, 1 1 1 1);
+  grid-row-gap: 40px;
+  color: $color-primary;
+}
+
+.home-left {
+  font-size: 24px;
+  @include flex-parent(space-evenly, start, column);
+  border-left: 3px solid $color-black;
+  h2 {
+    padding: 20px;
+  }
+}
+
+.home-right {
+  font-size: 24px;
+  flex-wrap: wrap;
+  border-right:3px solid $color-black;
+  text-align: right;
+  @include flex-parent(space-evenly, end, column);
+  h2 {
+    padding: 20px;
+  }
+}
+
+#home-one h2 {
+  position: relative;
+  animation: fromLeft 1s ease-in-out;
+  -webkit-animation: fromLeft 1s ease-in-out;
+}
+#home-two h2 {
+  position: relative;
+  animation: fromRight 2s ease-in-out;
+  animation-delay: 1s;
+  -webkit-animation: fromRight 2s ease-in-out;
+}
+#home-three h2 {
+  position: relative;
+  animation: fromLeft 3s ease-in-out;
+  animation-delay: 2s;
+  -webkit-animation: fromLeft 3s ease-in-out;
+}
+#home-four h2 {
+  position: relative;
+  animation: fromRight 4s ease-in-out;
+  animation-delay: 3s;
+  -webkit-animation: fromRight 4s ease-in-out;
+}

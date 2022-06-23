@@ -1,0 +1,83 @@
+@-webkit-keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.projects-wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1000px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.projects-wrapper .projects-title {
+  font-size: xx-large;
+  border-bottom: 1px solid black;
+  position: relative;
+  padding: 12px;
+  margin-left: 12px;
+  top: 0;
+  left: 0;
+}
+
+.projects-item {
+  border-bottom: 1px solid black;
+  padding: 40px;
+  max-width: 500px;
+  width: 60%;
+  color: black;
+}
+/*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,42 @@
+@import './utils.scss';
+
+.welcome-wrapper {
+  font-size: 40px;
+  width: 100%;
+  height: 600px;
+  border: 1px solid black;
+  @include flex-parent(center, center);
+  h1 {
+    border-bottom: 2px solid rgba($color: #000000, $alpha: .8);
+    padding: 0px 32px;
+  }
+}
+.welcome-progress-bar-outline {
+  height: 32px;
+  //border: 1px solid black;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 4px;
+}
+
+.welcome-progress-bar-fill {
+  background-color: $color-second;
+  width: 0%;
+  height: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  animation: loader 4s cubic-bezier(0.2,-2,0.8,2);
+  -webkit-animation: loader 4s cubic-bezier(0.2,-2,0.8,2);
+}
+
+@keyframes loader {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
